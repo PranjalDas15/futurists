@@ -7,7 +7,7 @@ const Testimonials = () => {
     if (!testimonials.content?.length) return null;
 
     return (
-        <section className="relative isolate overflow-hidden px-5 py-16 sm:px-8 md:px-12 md:py-24 lg:px-20">
+        <section id="testimonials" className="relative isolate overflow-hidden px-5 py-16 sm:px-8 md:px-12 md:py-24 lg:px-20">
             {/* Ambient background */}
             <div className="pointer-events-none absolute left-1/4 top-0 size-72 rounded-full bg-violet-500/[0.07] blur-[110px]" />
             <div className="pointer-events-none absolute bottom-0 right-0 size-72 rounded-full bg-sky-500/[0.07] blur-[110px]" />

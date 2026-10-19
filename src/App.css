@@ -1,20 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Momo+Trust+Display&family=Roboto:wght@100;300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@layer utilities {
-  .font-oswald {
-    font-family: "Oswald", sans-serif;
-  }
-
-  .font-anton {
-    font-family: "Anton", sans-serif;
-  }
-
-  .font-encode {
-    font-family: "Encode", sans-serif;
-  }
+@theme {
+  --font-anton: "Anton", sans-serif;
+  --font-encode: "Encode Sans Expanded", sans-serif;
+  --font-momo: "Momo Trust Display", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
 }
 
 :root {

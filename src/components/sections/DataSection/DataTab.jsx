@@ -1,36 +1,22 @@
-import React from 'react'
-import { assets, heroSection } from '../../../assets/assets'
+import { assets, heroSection } from "../../../assets/assets";
+import SocialProof from "./SocialProof";
+import Stats from "./Stats";
 
 const DataTab = () => {
-    const images = [
-        { img: assets.hero1, name: "hero1" },
-        { img: assets.hero2, name: "hero2" },
-        { img: assets.hero3, name: "hero3" },
-    ]
     return (
-        <div className='flex flex-col gap-10 items-center justify-center'>
-            <div className='flex flex-col gap-2 items-center justify-center'>
-                <div className='flex -gap-2'>
-                    {images.map((i, index) => (
-                        <div key={index} className={`size-[50px] shrink-0 overflow-hidden rounded-full border-4 border-sky-500 ${index !== 0 ? "-ml-3" : ""
-                            }`}>
-                            <img src={i.img} alt={i.name} className='object-contain' />
-                        </div>
-                    ))}
-                </div>
-                <p className='text-[20px]'>{heroSection.hero1}</p>
-            </div>
+        <section id="data-tab" className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-10 px-5 py-8 text-center sm:gap-12 sm:px-8">
+            <SocialProof
+                images={[
+                    { img: assets.hero1, name: "Client 1" },
+                    { img: assets.hero2, name: "Client 2" },
+                    { img: assets.hero3, name: "Client 3" },
+                ]}
+                text={heroSection.hero1}
+            />
 
-            <div className='w-[40%] flex items-center justify-evenly gap-5 '>
-                {heroSection.heroData.map((hd, index) => (
-                    <div key={index} className='text-center space-y-2'>
-                        <div className='flex gap-1 text-[60px] font-bold leading-[60px]'><h2 className=''>{hd.data}</h2><p>+</p></div>
-                        <p className='text-[18px]'>{hd.text}</p>
-                    </div>
-                ))}
-            </div>
-        </div>
-    )
-}
+            <Stats data={heroSection.heroData} />
+        </section>
+    );
+};
 
-export default DataTab
+export default DataTab;

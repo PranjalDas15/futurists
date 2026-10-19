@@ -38,7 +38,6 @@ import brand23 from '../assets/brand23.jpg'
 import brand24 from '../assets/brand24.jpg'
 import brand25 from '../assets/brand25.jpg'
 import brand26 from '../assets/brand26.jpg'
-import brand27 from '../assets/brand27.jpg'
 import brand28 from '../assets/brand28.jpg'
 import testimonial1 from '../assets/testimonial1.jpg'
 import testimonial2 from '../assets/testimonial2.jpg'
@@ -53,12 +52,11 @@ import {
     Clock3,
     TrendingUp,
 } from "lucide-react"
-import { href } from 'react-router'
 
 export const assets = {
     logo, logo_white, hero1, hero2, hero3, emp1, emp2, emp3, emp4, emp5, emp6, emp7, emp8,
     brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand11, brand12, brand13,
-    brand14, brand15, brand16, brand17, brand18, brand19, brand20, brand21, brand22, brand23, brand24, brand25, brand26, brand27, brand28,
+    brand14, brand15, brand16, brand17, brand18, brand19, brand20, brand21, brand22, brand23, brand24, brand25, brand26, brand28,
     moto, testimonial1, testimonial2, testimonial3
 
 }
@@ -73,7 +71,7 @@ export const navlinks = [
             { name: "AI AD Films", href: "" },
             { name: "Wedding Branding", href: "" },
             { name: "Branding", href: "" },
-            { name: "Search Engine Optimization", href: "" },
+            { name: "SEO", href: "" },
             { name: "Video Editing", href: "" },
             { name: "Event Marketing", href: "" },
             { name: "Website Designing", href: "" },
@@ -87,6 +85,14 @@ export const navlinks = [
     { name: "List of Futurists", href: "", menu: [] },
     { name: "Contact Us", href: "", menu: [] },
 ]
+
+export const brands = {
+    head: "Trusted by more than 350+ Brands",
+    logos: [
+        brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand11, brand12, brand13,
+        brand14, brand15, brand16, brand17, brand18, brand19, brand20, brand21, brand22, brand23, brand24, brand25, brand26, brand28,
+    ]
+}
 
 export const heroSection = {
     head1: "AI Powered Human Hearted",

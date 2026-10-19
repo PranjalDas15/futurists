@@ -7,7 +7,7 @@ import Section1 from './Section1/Section1'
 
 const About = () => {
     return (
-        <div className='w-full flex flex-col items-center justify-center'>
+        <div id='about' className='w-full flex flex-col items-center justify-center'>
             <Section1 />
             <Section2 />
             <Section3 />

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import FormField from "./FormField";
+import Button from "../../ui/Button";
 
 const BookCallForm = ({ placeholder, head }) => {
     const [formData, setFormData] = useState({
@@ -92,17 +93,7 @@ const BookCallForm = ({ placeholder, head }) => {
                     placeholder={placeholder}
                 />
 
-                {/* Submit button */}
-                <button
-                    type="submit"
-                    className="group flex w-full items-center justify-center gap-3 rounded-full border border-indigo-600 bg-gradient-to-r from-violet-600 via-indigo-600 to-blue-700 px-6 py-4 text-sm font-bold text-white shadow-lg shadow-indigo-500/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/30 active:translate-y-0 active:scale-[0.99] dark:border-white/25 dark:bg-none dark:bg-white dark:text-indigo-700 dark:hover:bg-sky-100"
-                >
-                    Book a call
-
-                    <span className="flex size-8 items-center justify-center rounded-full bg-white/15 text-white transition-transform duration-300 group-hover:rotate-45 dark:bg-indigo-600 dark:text-white">
-                        <ArrowUpRight size={17} />
-                    </span>
-                </button>
+                <Button name={'Book a Call'} type="submit" className="w-full" />
 
                 <p className="text-center text-xs leading-5 text-slate-500 dark:text-white/45">
                     No pressure. Just a conversation about your growth.

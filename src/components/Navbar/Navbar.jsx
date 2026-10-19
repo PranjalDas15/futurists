@@ -5,6 +5,7 @@ import { assets, navlinks } from "../../assets/assets";
 import NavSectionWraper from "./NavSectionWraper";
 import ThemeToggler from "../ui/ThemeToggler";
 import Button from "./Button";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 
 const Navbar = () => {
     const [activeMenu, setActiveMenu] = useState(null);
@@ -18,6 +19,24 @@ const Navbar = () => {
     const closeMobileMenu = () => {
         setMobileOpen(false);
         setMobileSolutionsOpen(false);
+    };
+    const onClickButton = () => {
+        closeMobileMenu();
+
+        const bookCallSection = document.getElementById("book-a-call");
+
+        if (!bookCallSection) return;
+
+        const smoother = ScrollSmoother.get();
+
+        if (smoother) {
+            smoother.scrollTo(bookCallSection, true, "top top");
+        } else {
+            bookCallSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
     };
 
     return (
@@ -71,8 +90,8 @@ const Navbar = () => {
                                     aria-haspopup={hasMenu ? "true" : undefined}
                                     aria-expanded={hasMenu ? isActive : undefined}
                                     className={`flex items-center gap-1 text-[15px] font-semibold transition-colors duration-200 ${isActive
-                                            ? "text-sky-500"
-                                            : "text-text-primary hover:text-sky-500"
+                                        ? "text-sky-500"
+                                        : "text-text-primary hover:text-sky-500"
                                         }`}
                                 >
                                     {nav.name}
@@ -96,7 +115,7 @@ const Navbar = () => {
                     className="hidden h-[70px] shrink-0 xl:flex"
                 >
                     <ThemeToggler />
-                    <Button name="Book Now" />
+                    <Button name="Book Now" onClickFunc={onClickButton} />
                 </NavSectionWraper>
 
                 {/* Mobile actions */}
@@ -180,9 +199,9 @@ const Navbar = () => {
                                                 <ChevronDown
                                                     size={17}
                                                     className={`transition-transform duration-300 ${isSolutions &&
-                                                            mobileSolutionsOpen
-                                                            ? "rotate-180"
-                                                            : ""
+                                                        mobileSolutionsOpen
+                                                        ? "rotate-180"
+                                                        : ""
                                                         }`}
                                                 />
                                             </button>
@@ -211,7 +230,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="pt-4">
-                        <Button name="Book Now" />
+                        <Button name="Book Now" onClickFunc={onClickButton} />
                     </div>
                 </div>
             )}
