@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer utilities {
+  .font-oswald {
+    font-family: "Oswald", sans-serif;
+  }
+
+  .font-anton {
+    font-family: "Anton", sans-serif;
+  }
+
+  .font-encode {
+    font-family: "Encode", sans-serif;
+  }
+}
+
+:root {
+  --primary: #ffff;
+  --input: #ffff;
+  --table-bg-1: #bae6fd;
+  --table-bg-2: #ffff;
+  --sidebar: #e2e8f0;
+  --secondary: #bae6fd;
+  --text-primary: #0f172c;
+}
+
+.dark {
+  --primary: #000000;
+  --input: #475569;
+  --table-bg-1: #0000;
+  --table-bg-2: #475569;
+  --sidebar: #334155;
+  --secondary: #0f172a;
+  --text-primary: #f1f5f9;
+}
+
+@theme {
+  --font-sans:
+    'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+
+  --color-primary: var(--primary);
+  --color-input: var(--input);
+  --color-table-bg-1: var(--table-bg-1);
+  --color-table-bg-2: var(--table-bg-2);
+  --color-sidebar: var(--sidebar);
+  --color-secondary: var(--secondary);
+  --color-text-primary: var(--text-primary);
+}
+
+@utility transition-setting-1 {
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+@utility transition-setting-2 {
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
