@@ -8,15 +8,7 @@ const Section1Card = ({ card, index }) => {
                 : "border-secondary/60 bg-primary/30 backdrop-blur-xl hover:border-sky-400/40 hover:bg-primary/50"
                 }`}
         >
-            {/* Decorative glow */}
-            <div
-                className={`pointer-events-none absolute -right-8 -top-8 size-24 rounded-full blur-3xl transition-opacity duration-500 group-hover:opacity-100 ${isFeatured
-                    ? "bg-white/20 opacity-50"
-                    : "bg-sky-400/10 opacity-60"
-                    }`}
-            />
 
-            {/* Card header */}
             <div className="relative flex items-center justify-between">
                 <span
                     className={`font-mono text-[10px] tracking-[0.16em] ${isFeatured
@@ -50,7 +42,6 @@ const Section1Card = ({ card, index }) => {
                 </span>
             </div>
 
-            {/* Card content */}
             <div className="relative mt-auto pt-5">
                 <h2
                     className={`text-2xl font-bold tracking-tight sm:text-3xl ${isFeatured
@@ -82,7 +73,6 @@ const Section1Card = ({ card, index }) => {
                 </p>
             </div>
 
-            {/* Bottom accent */}
             <div
                 className={`absolute bottom-0 left-4 right-4 h-[2px] origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100 sm:left-5 sm:right-5 ${isFeatured
                     ? "bg-white/70"

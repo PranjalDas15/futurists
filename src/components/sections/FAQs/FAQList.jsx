@@ -7,7 +7,6 @@ const FAQList = ({ items }) => {
 
     if (!items?.length) return null;
 
-    // Divide the FAQs into two independent columns
     const midpoint = Math.ceil(items.length / 2);
     const columns = [
         items.slice(0, midpoint),

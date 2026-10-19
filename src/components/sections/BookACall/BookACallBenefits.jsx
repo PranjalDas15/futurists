@@ -6,7 +6,6 @@ import InfoCard from "./InfoCard";
 const BookCallBenefits = ({ benefits }) => {
     return (
         <>
-            {/* Benefits card */}
             <div className="rounded-3xl border border-violet-200/70 bg-white/80 p-6 shadow-xl shadow-violet-950/[0.04] backdrop-blur-xl transition-colors duration-300 dark:border-white/20 dark:bg-white/[0.08] dark:shadow-none sm:p-8">
                 <div className="mb-7 flex items-center gap-4">
                     <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl border border-violet-200 bg-gradient-to-br from-violet-100 to-sky-100 text-indigo-700 dark:border-sky-200/20 dark:from-sky-200/10 dark:to-violet-200/10 dark:text-sky-100">

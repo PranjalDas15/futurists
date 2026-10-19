@@ -100,7 +100,7 @@ export const brands = {
 }
 
 export const heroSection = {
-    head1: "AI Powered Human Hearted",
+    head1: "AI Powered. Human Hearted.",
     head2: "One Subscription for all",
     body: "Futurists is a Digital Marketing agency in Guwahati, Assam where AI meets creativity to build smarter brands, stronger stories and bigger impact. From branding to SEO, social media, performance marketing, websites & video—we make brands move.",
     hero1: "Creative enough to scare boring brands.",

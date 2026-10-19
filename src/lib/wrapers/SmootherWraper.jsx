@@ -34,12 +34,10 @@ const SmootherWrapper = ({ children }) => {
             id="smooth-wrapper"
             className="relative min-h-screen overflow-hidden bg-primary"
         >
-            {/* Background effects */}
             <div
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 z-0 overflow-hidden"
             >
-                {/* Visible technical grid */}
                 <div
                     className="absolute inset-0 opacity-70 dark:opacity-40"
                     style={{
@@ -53,7 +51,6 @@ const SmootherWrapper = ({ children }) => {
                     }}
                 />
 
-                {/* Large violet glow */}
                 <div
                     className="absolute -left-40 top-[5%] h-[600px] w-[600px] rounded-full blur-[100px]"
                     style={{
@@ -62,7 +59,6 @@ const SmootherWrapper = ({ children }) => {
                     }}
                 />
 
-                {/* Electric blue glow */}
                 <div
                     className="absolute -right-40 top-[12%] h-[650px] w-[650px] rounded-full blur-[110px]"
                     style={{
@@ -71,7 +67,6 @@ const SmootherWrapper = ({ children }) => {
                     }}
                 />
 
-                {/* Luminous gradient ribbon */}
                 <div
                     className="absolute left-1/2 top-[20%] h-[180px] w-[85%] -translate-x-1/2 rotate-[-12deg] rounded-[100%] blur-[65px]"
                     style={{
@@ -80,7 +75,6 @@ const SmootherWrapper = ({ children }) => {
                     }}
                 />
 
-                {/* Central focal glow */}
                 <div
                     className="absolute left-1/2 top-[28%] h-[300px] w-[300px] -translate-x-1/2 rounded-full blur-[100px]"
                     style={{
@@ -89,7 +83,6 @@ const SmootherWrapper = ({ children }) => {
                     }}
                 />
 
-                {/* Lower violet-blue atmosphere */}
                 <div
                     className="absolute -bottom-20 right-[5%] h-[500px] w-[500px] rounded-full blur-[110px]"
                     style={{
@@ -98,25 +91,21 @@ const SmootherWrapper = ({ children }) => {
                     }}
                 />
 
-                {/* Floating luminous orbs */}
                 <div className="absolute left-[13%] top-[24%] size-3 rounded-full border border-violet-300/70 bg-violet-400/50 shadow-[0_0_25px_8px_rgba(139,92,246,0.25)]" />
 
                 <div className="absolute right-[18%] top-[38%] size-2 rounded-full bg-sky-300 shadow-[0_0_25px_8px_rgba(56,189,248,0.35)]" />
 
                 <div className="absolute left-[70%] top-[15%] size-2 rounded-full bg-violet-300 shadow-[0_0_20px_6px_rgba(139,92,246,0.3)]" />
 
-                {/* Fine accent lines */}
                 <div className="absolute left-[12%] top-[34%] h-px w-24 bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
 
                 <div className="absolute right-[10%] top-[48%] h-px w-32 bg-gradient-to-r from-transparent via-sky-400/60 to-transparent" />
             </div>
 
-            {/* Navbar */}
             <div className="absolute left-0 top-0 z-[100] w-full">
                 <Navbar />
             </div>
 
-            {/* Scroll content */}
             <div
                 ref={contentRef}
                 id="smooth-content"

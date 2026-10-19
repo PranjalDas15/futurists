@@ -13,7 +13,12 @@ const Hero = () => {
             <div className="mx-auto flex max-w-7xl flex-col items-center text-center">
 
                 <h1 className="max-w-6xl font-momo text-4xl font-black leading-[1.08] tracking-tight text-text-primary sm:text-6xl md:text-7xl lg:text-8xl xl:text-[104px]">
-                    {heroSection.head1}
+                    {heroSection.head1.split(".").filter(Boolean).map((line, index) => (
+                        <span key={index} className="block">
+                            {line.trim()}
+                            {index === 0 ? "." : ""}
+                        </span>
+                    ))}
                 </h1>
 
                 <p className="mt-6 max-w-3xl text-base leading-7 text-text-primary/65 sm:mt-8 sm:text-lg sm:leading-8 md:text-xl">

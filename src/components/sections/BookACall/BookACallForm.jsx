@@ -28,7 +28,7 @@ const BookCallForm = ({ placeholder, head }) => {
 
     return (
         <div className="relative"><div className="relative rounded-3xl border border-violet-200/80 bg-white/90 p-6 shadow-xl shadow-violet-950/[0.06] backdrop-blur-2xl transition-colors duration-300 dark:border-white/25 dark:bg-white/[0.12] dark:shadow-2xl dark:shadow-indigo-950/20 sm:p-9 lg:p-10">
-            {/* Form heading */}
+
             <div className="mb-8">
                 <h3 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-3xl">
                     {head}
@@ -36,7 +36,6 @@ const BookCallForm = ({ placeholder, head }) => {
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-5">
-                {/* Name and email */}
                 <div className="grid gap-5 sm:grid-cols-2">
                     <FormField
                         label="Full name"
@@ -60,7 +59,6 @@ const BookCallForm = ({ placeholder, head }) => {
                     />
                 </div>
 
-                {/* Phone and company */}
                 <div className="grid gap-5 sm:grid-cols-2">
                     <FormField
                         label="Contact number"
@@ -84,7 +82,6 @@ const BookCallForm = ({ placeholder, head }) => {
                     />
                 </div>
 
-                {/* Services */}
                 <FormField
                     label="Services you're interested in"
                     name="services"
