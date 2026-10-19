@@ -13,8 +13,6 @@ const FAQItem = ({ item, index, isOpen, onToggle }) => {
                 <button
                     id={buttonId}
                     type="button"
-                    aria-expanded={isOpen}
-                    aria-controls={panelId}
                     onClick={onToggle}
                     className="group flex w-full items-center gap-4 py-5 text-left sm:py-6"
                 >
