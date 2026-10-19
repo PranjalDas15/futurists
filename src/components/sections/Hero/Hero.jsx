@@ -1,6 +1,7 @@
 import { ArrowDownRight, Sparkles } from "lucide-react";
 import { heroSection } from "../../../assets/assets";
 import Button from "../../ui/Button";
+import { scrollToBookCall } from "../../../lib/wrapers/actions/actions";
 
 const Hero = () => {
     return (
@@ -20,6 +21,7 @@ const Hero = () => {
                 </p>
                 <div className="mt-8">
                     <Button
+                        onClick={scrollToBookCall}
                         name="Book a call"
                         className="w-full sm:w-[200px]"
                     />

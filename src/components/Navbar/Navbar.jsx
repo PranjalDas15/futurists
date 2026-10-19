@@ -5,7 +5,7 @@ import { assets, navlinks } from "../../assets/assets";
 import NavSectionWraper from "./NavSectionWraper";
 import ThemeToggler from "../ui/ThemeToggler";
 import Button from "./Button";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { scrollToBookCall } from "../../lib/wrapers/actions/actions";
 
 const Navbar = () => {
     const [activeMenu, setActiveMenu] = useState(null);
@@ -20,24 +20,7 @@ const Navbar = () => {
         setMobileOpen(false);
         setMobileSolutionsOpen(false);
     };
-    const onClickButton = () => {
-        closeMobileMenu();
 
-        const bookCallSection = document.getElementById("book-a-call");
-
-        if (!bookCallSection) return;
-
-        const smoother = ScrollSmoother.get();
-
-        if (smoother) {
-            smoother.scrollTo(bookCallSection, true, "top top");
-        } else {
-            bookCallSection.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-            });
-        }
-    };
 
     return (
         <nav
@@ -115,7 +98,7 @@ const Navbar = () => {
                     className="hidden h-[70px] shrink-0 xl:flex"
                 >
                     <ThemeToggler />
-                    <Button name="Book Now" onClickFunc={onClickButton} />
+                    <Button name="Book Now" onClickFunc={scrollToBookCall} />
                 </NavSectionWraper>
 
                 {/* Mobile actions */}
@@ -230,7 +213,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="pt-4">
-                        <Button name="Book Now" onClickFunc={onClickButton} />
+                        <Button name="Book Now" onClickFunc={scrollToBookCall} />
                     </div>
                 </div>
             )}

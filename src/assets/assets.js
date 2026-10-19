@@ -63,27 +63,27 @@ export const assets = {
 
 export const navlinks = [
     { name: "Home", href: "", menu: [] },
-    { name: "About Us", href: "", menu: [] },
+    { name: "About Us", href: "https://futurists.in/about-us/", menu: [] },
     {
-        name: "Solutions", href: "", menu: [
-            { name: "One for all Subscriptions", href: "" },
-            { name: "Social Media Marketing", href: "" },
-            { name: "AI AD Films", href: "" },
-            { name: "Wedding Branding", href: "" },
-            { name: "Branding", href: "" },
-            { name: "SEO", href: "" },
-            { name: "Video Editing", href: "" },
-            { name: "Event Marketing", href: "" },
-            { name: "Website Designing", href: "" },
-            { name: "Performance Marketing", href: "" },
-            { name: "Website Maintenance", href: "" },
-            { name: "Influencer Marketing", href: "" },
+        name: "Solutions", href: "https://futurists.in/solutions/", menu: [
+            { name: "One for all Subscriptions", href: "https://futurists.in/solutions/all-in-one-marketing/" },
+            { name: "Social Media Marketing", href: "https://futurists.in/solutions/best-social-media-marketing-services/" },
+            { name: "AI AD Films", href: "https://futurists.in/solutions/ai-ad-film/" },
+            { name: "Wedding Branding", href: "https://futurists.in/solutions/wedding-branding/" },
+            { name: "Branding", href: "https://futurists.in/solutions/best-branding-services/" },
+            { name: "SEO", href: "https://futurists.in/solutions/best-seo-agency-in-guwahati/" },
+            { name: "Video Editing", href: "https://futurists.in/solutions/best-video-editing-services/" },
+            { name: "Event Marketing", href: "https://futurists.in/solutions/best-event-marketing/" },
+            { name: "Website Designing", href: "https://futurists.in/solutions/best-website-designing-services/" },
+            { name: "Performance Marketing", href: "https://futurists.in/solutions/best-performance-marketing-service/" },
+            { name: "Website Maintenance", href: "https://futurists.in/solutions/best-website-maintenance-services/" },
+            { name: "Influencer Marketing", href: "https://futurists.in/solutions/influencer-marketing/" },
         ]
     },
-    { name: "Portfolio", href: "", menu: [] },
-    { name: "Blogs", href: "", menu: [] },
-    { name: "List of Futurists", href: "", menu: [] },
-    { name: "Contact Us", href: "", menu: [] },
+    { name: "Portfolio", href: "https://futurists.in/portfolio/", menu: [] },
+    { name: "Blogs", href: "https://futurists.in/blogs/", menu: [] },
+    { name: "List of Futurists", href: "https://futurists.in/life-at-futurists/", menu: [] },
+    { name: "Contact Us", href: "https://futurists.in/contact-us/", menu: [] },
 ]
 
 export const brands = {
@@ -294,6 +294,53 @@ export const aboutSection5 = {
     ]
 }
 
+export const aboutSection6 = {
+    head: "Tailored Strategies for Every Industry We Touch.",
+    cards: [
+        {
+            head: "Branding",
+            body: "Build a memorable identity that customers instantly recognize.",
+            capsules: [
+                "Logo Design", "Brand Identity", "Stationary", "Brand Guidelines"
+            ]
+        },
+        {
+            head: "Digital Marketing",
+            body: "Reach the right audience through data-driven marketing strategies",
+            capsules: [
+                "Social Media", "Google Ads", "Meta Ads", "SEO/AEO/GEO"
+            ]
+        },
+        {
+            head: "Website Development",
+            body: "Websites designed to attract visitors and convert them into customers",
+            capsules: [
+                "eCommerce", "Landing Pages", "Custom Applications", "Site Maintenance"
+            ]
+        },
+        {
+            head: "Creative Design",
+            body: "Professional visuals that strengthen your brand",
+            capsules: [
+                "Packaging", "Outdoor Activities", "Print Designs", "Brochures"
+            ]
+        },
+        {
+            head: "Video Productions",
+            body: "Create engaging videos that stop people from scrolling",
+            capsules: [
+                "Commercial Ads", "Corporate Videos", "2D/3D Animations", "Motion Graphics"
+            ]
+        },
+        {
+            head: "AI and Automations",
+            body: "Modern businesses deserve modern workflows.",
+            capsules: [
+                "AI Chatbots", "Lead Automations", "CRM Integrations", "AI Ads"
+            ]
+        }
+    ]
+}
 
 export const footerContent = {
     logo: assets.logo_white,
@@ -500,5 +547,24 @@ export const faqData = {
             head: "How do I get started with Futurists?",
             body: "It starts with a free strategy call. You share your goals and current position, and you leave with a personalised growth roadmap, clear recommendations on which services fit, and honest feedback on what is holding your marketing back, whether or not you go on to work with Futurists. Reach hello@futurists.in or call +91 70029 12564."
         },
+    ]
+}
+
+export const blogs = {
+    head: "Blog",
+    button: "Read more",
+    content: [
+        {
+            body: "Futurists Testimonial : Real Stories From Guwahati Brand",
+            href: "https://futurists.in/futurists-testimonial-real-stories-from-guwahati-brand/"
+        },
+        {
+            body: "Local SEO Services for Grocery Shop Owners",
+            href: "https://futurists.in/local-seo-services-for-grocery-shop-owners/"
+        },
+        {
+            body: "How to Choose the Best Digital Marketing Agency in Guwahati",
+            href: "https://futurists.in/how-to-choose-the-best-digital-marketing-agency-in-guwahati/"
+        }
     ]
 }

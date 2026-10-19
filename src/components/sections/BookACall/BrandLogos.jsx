@@ -13,8 +13,8 @@ const BrandLogos = ({ brands }) => {
             </p>
 
             <div className="relative overflow-hidden">
-                <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 bg-gradient-to-r from-white to-transparent sm:w-16 dark:from-primary" />
-                <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-white to-transparent sm:w-16 dark:from-primary" />
+                <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10  sm:w-16 dark:from-primary" />
+                <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 sm:w-16 dark:from-primary" />
 
                 <Marquee
                     gradient={false}
@@ -24,7 +24,7 @@ const BrandLogos = ({ brands }) => {
                     {brands.map((brand, index) => (
                         <div
                             key={index}
-                            className="mx-3 flex shrink-0 items-center justify-center sm:mx-4 sm:w-32 dark:border-white/15 dark:bg-white/95 dark:hover:border-sky-200/60"
+                            className="mx-3 flex shrink-0 items-center justify-center sm:mx-4 sm:w-32 dark:border-white/15 dark:bg-white/95 dark:hover:border-sky-200/60 rounded-[20px]"
                         >
                             <img
                                 src={brand}

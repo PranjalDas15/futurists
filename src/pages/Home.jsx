@@ -1,4 +1,5 @@
 import About from "../components/sections/About/About";
+import Blogs from "../components/sections/Blog/Blogs";
 import BookACall from "../components/sections/BookACall/BookACall";
 import DataTab from "../components/sections/DataSection/DataTab";
 import FAQs from "../components/sections/FAQs/FAQs";
@@ -19,6 +20,7 @@ const Home = () => {
             <About />
             <Testimonials />
             <FAQs />
+            <Blogs />
             <BookACall />
             <Footer />
         </SmootherWrapper>
