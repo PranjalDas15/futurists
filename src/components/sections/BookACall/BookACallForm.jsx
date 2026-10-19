@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import FormField from "./FormField";
 import Button from "../../ui/Button";
+import { toast } from "react-toastify";
 
 const BookCallForm = ({ placeholder, head }) => {
     const [formData, setFormData] = useState({
@@ -23,7 +24,15 @@ const BookCallForm = ({ placeholder, head }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Discovery call request:", formData);
+        console.log("FormData:", formData);
+        toast.success("Message sent.");
+        setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            company: "",
+            services: "",
+        });
     };
 
     return (
