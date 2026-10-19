@@ -25,7 +25,7 @@ const BookCallForm = ({ placeholder, head }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("FormData:", formData);
-        toast.success("Message sent.");
+        toast.success("Your slot have been booked. We will reach out to you shortly.");
         setFormData({
             name: "",
             email: "",
