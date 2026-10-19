@@ -1,5 +1,6 @@
 
 import { Mail, MapPin, Phone } from "lucide-react";
+import { footerContent } from "../../../assets/assets";
 
 const ContactItem = ({ icon: Icon, title, children }) => (
     <div className="flex items-start gap-3">
@@ -20,8 +21,7 @@ const FooterContact = ({ contact }) => {
     return (
         <div>
             <h3 className="mb-6 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-white">
-                <span className="h-px w-5 bg-sky-200" />
-                Get in touch
+                {footerContent.contact_details.head}
             </h3>
 
             <div className="flex flex-col gap-6">

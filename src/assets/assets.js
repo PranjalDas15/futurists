@@ -42,6 +42,11 @@ import brand28 from '../assets/brand28.jpg'
 import testimonial1 from '../assets/testimonial1.jpg'
 import testimonial2 from '../assets/testimonial2.jpg'
 import testimonial3 from '../assets/testimonial3.jpg'
+import facebook from '../assets/facebook.svg'
+import insta from '../assets/insta.svg'
+import pinterest from '../assets/pinterest.svg'
+import linkedin from '../assets/linkedin.svg'
+import x from '../assets/x.svg'
 import {
     Infinity,
     Receipt,
@@ -57,7 +62,7 @@ export const assets = {
     logo, logo_white, hero1, hero2, hero3, emp1, emp2, emp3, emp4, emp5, emp6, emp7, emp8,
     brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10, brand11, brand12, brand13,
     brand14, brand15, brand16, brand17, brand18, brand19, brand20, brand21, brand22, brand23, brand24, brand25, brand26, brand28,
-    moto, testimonial1, testimonial2, testimonial3
+    moto, testimonial1, testimonial2, testimonial3, facebook, insta, pinterest, linkedin, x
 
 }
 
@@ -356,23 +361,23 @@ export const footerContent = {
                 },
                 {
                     name: "About Us",
-                    href: "/",
+                    href: "https://futurists.in/#",
                 },
                 {
                     name: "Our Services",
-                    href: "/",
+                    href: "https://futurists.in/#",
                 },
                 {
                     name: "Portfolio",
-                    href: "/",
+                    href: "https://futurists.in/#",
                 },
                 {
                     name: "FAQs",
-                    href: "/",
+                    href: "https://futurists.in/#",
                 },
                 {
                     name: "Contact Us",
-                    href: "/",
+                    href: "https://futurists.in/#",
                 }
             ]
         },
@@ -381,56 +386,57 @@ export const footerContent = {
             links: [
                 {
                     name: "One for All",
-                    href: "/",
+                    href: "https://futurists.in/solutions/all-in-one-marketing/",
                 },
                 {
                     name: "Branding",
-                    href: "/"
+                    href: "https://futurists.in/solutions/best-branding-services/"
                 },
                 {
                     name: "Website Designing",
-                    href: "/"
+                    href: "https://futurists.in/solutions/best-website-designing-services/"
                 },
                 {
                     name: "Social Media Marketing",
-                    href: "/"
+                    href: "https://futurists.in/solutions/best-social-media-marketing-services/"
                 },
                 {
                     name: "Search Engine Optimizarion",
-                    href: "/"
+                    href: "https://futurists.in/solutions/best-seo-agency-in-guwahati/"
                 },
                 {
                     name: "Performance Marketing",
-                    href: "/"
+                    href: "https://futurists.in/solutions/best-performance-marketing-service/"
                 },
                 {
                     name: "AI AD Film",
-                    href: "/"
+                    href: "https://futurists.in/solutions/ai-ad-film/"
                 },
                 {
                     name: "Video Editing",
-                    href: "/"
+                    href: "https://futurists.in/solutions/best-video-editing-services/"
                 },
                 {
                     name: "Website Maintenance",
-                    href: "/"
+                    href: "https://futurists.in/solutions/best-website-maintenance-services/"
                 },
                 {
                     name: "Wedding Branding",
-                    href: "/"
+                    href: "https://futurists.in/solutions/wedding-branding/"
                 },
                 {
                     name: "Event Marketing",
-                    href: "/"
+                    href: "https://futurists.in/solutions/best-event-marketing/"
                 },
                 {
                     name: "Influencer Marketing",
-                    href: "/"
+                    href: "https://futurists.in/solutions/influencer-marketing/"
                 },
             ]
         }
     ],
     contact_details: {
+        head: "Get in touch",
         address_head: "Office Address",
         address: "B-2 , 2nd floor, Gionee Care Building, Lamb Road, Uzan bazar, Ambari, Guwahati, Assam 781001",
         email_head: "Email Address",
@@ -441,6 +447,9 @@ export const footerContent = {
             "(+91) 70029 63995"
         ]
     },
+    socials: [
+        facebook, insta, pinterest, linkedin, x
+    ],
     footer: {
         text: "Futurists © 2026 All rights reserved",
         links: [

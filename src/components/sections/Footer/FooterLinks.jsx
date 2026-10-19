@@ -8,7 +8,6 @@ const FooterLinks = ({ group }) => {
     return (
         <div>
             <h3 className="mb-6 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-white">
-                <span className="h-px w-5 bg-sky-200" />
                 {group.head}
             </h3>
 
